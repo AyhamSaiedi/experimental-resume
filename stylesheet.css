@@ -1,0 +1,46 @@
+body {
+    font-size: 100px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-page {
+    font-size: 100px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.stage-one {
+    font-size: 100px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.stage-two {
+    font-size: 100px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.stage-final {
+    font-size: 100px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.wrapper-two {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+}
+
+.right-stage-one, .right-stage-two {
+    font-size: 100px;
+}
