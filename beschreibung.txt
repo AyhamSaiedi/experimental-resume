@@ -1,0 +1,9 @@
+Route (endpoint)
+
+middleware (functions that have access to the request and response objects and run their code there)
+
+API is the messenger and REST lets us use HTTP requests to format the messages
+
+Using:
+json --> AJAX (instead of xml)
+RESTful API: A RESTful API is an architectural style with certain constraints for an application program interface (API) that uses HTTP requests to access and use data.

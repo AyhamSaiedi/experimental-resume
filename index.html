@@ -4,38 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/Users/ayhamsaiedi/Desktop/Studienarbeit/Informaik 3/Aufgabe 1/stylesheet.css">
+    
 
     <!-- <link rel="stylesheet" href="frameworks/skeleton/css/normalize.css">
     <link rel="stylesheet" href="frameworks/skeleton/css/skeleton.css"> -->
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Document</title>
 
 </head>
 
 <body>
 
-    <section class="upper-stage">
+        <nav class="site-nav text-uppercase navbar navbar-expand-md navbar-dark w-100 bg-primary">
+                
+            <div class="container-fluid">
+                <a class="navbar-brand font-weight-normal" href="#prelude">
+                    <i class="fas fa-cube mr-2"></i> prelude</a>
+                
+                <button 
+                    type="button" 
+                    class="navbar-toggler" 
+                    data-toggle="collapse" 
+                    data-target="#myTogglerNav" 
+                    aria-controls="#myTogglerNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- aria-label is for screen readers  -->
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse" id="myTogglerNav">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="#intro">intro</a>
+                        <a class="nav-item nav-link" href="#page-one">stage-one</a>
+                        <a class="nav-item nav-link" href="#page-two">stage-two</a>
+                        <a class="nav-item nav-link" href="#page-final">stage-final</a>
+                    </div>
+                </section>
+            </div>
+        </nav>
+
+
+    <section class="upper-stage" id="prelude">
         <p> this website is stupid <br>
             scroll down to get back to it </p>
     </section>
 
-    <section class="landing-page">
+    <section class="landing-page" id="intro">
         <p> On 25. Nov. 2020 </p>
     </section>
 
-    <section class="stage-one">
+    <section class="stage-one" id="page-one">
         <p> stage : 1 <br>
             ground : common <br>
             forgetting w you </p>
     </section>
 
-    <section class="stage-two">
+    <section class="stage-two" id="page-two">
         <p> stage : 2 <br>
             ground : grounded <br>
             forgetting abt you </p>
     </section>
 
-    <section class="stage-final">
+    <section class="stage-final" id="page-final">
         <p> stage : final <br>
             ground : zero <br>
             wondering : why <br>
@@ -63,6 +95,12 @@
     <section class="ask-me-down">
         <p> ask me why </p>
     </section>
+
+    <!-- bootstrap uses popperjs and jquery that's why they're being loaded before bootstrap // succession matters here -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script> -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 
 </body>
 
