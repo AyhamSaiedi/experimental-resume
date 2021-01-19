@@ -45,23 +45,159 @@
     font-size: 100px;
 } */
 
+
+/* COLOR USED: #322eff */
+/* >>>>GENERAL STYLE<<<< */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Kufam', cursive;
+}
+
+/* >>>>NAVIGATION<<<< */
+.nav-item{
+    font-family: 'Kufam', cursive;
+}
+
+
+.site-nav{
+    position: fixed;
+    z-index: 20;
+}
+
 .site-nav .nav-link {
     position: relative;
     padding-bottom: 2px;
 }
-
+/* Die Position ist Absolut bezogen auf das Eltern-Element was Relativ positioniert ist */
 .site-nav .nav-link::before {
     content: '';
     position: absolute;
     width: 100%;
-    max-width: 150px;
-    height: 2px;
+    max-width: 8px;
+    height: 8px;
     bottom: 0;
     left: 0;
-    background-color: white;
+    background-color:chartreuse;
     visibility: hidden;
+    transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0;
 }
 
 .site-nav .nav-link:hover::before {
     visibility: visible;
+    max-width: 60px;
+    opacity: 1;
 }
+
+/* >>>>MIDDLE SECTION<<<< */
+
+.landing-page{
+    position: relative;
+    height: 100vh;
+    /* background: linear-gradient(180deg, #322eff, rgb(0, 207, 111)); */
+}
+
+.header-title{
+    animation: slideUp 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.header-subtitle {
+    animation: slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+
+.landing-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(images/green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    /* opacity: 1; */
+}
+
+
+
+#prelude {
+    background-color: #322eff;
+}
+
+#page-one {
+    background-color: #322eff;
+}
+
+#page-two {
+    background-color: #322eff;
+}
+
+#page-final {
+    background-color: #322eff;
+}
+
+.welcome-content {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    z-index: 6;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(300px) scale(1.2);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes clear{
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* >>>>CHEVRON section<<<< */
+
+.header-cue {
+    z-index: 11;
+}
+
+
+
+/* .header-subtitle::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .header-subtitle:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .header-subtitle::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(0, 214, 11);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  .header-subtitle {
+    position: relative;
+    font-size: 5rem;
+    text-align: center;
+  } */

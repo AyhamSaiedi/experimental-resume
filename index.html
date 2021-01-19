@@ -4,98 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 
     <!-- <link rel="stylesheet" href="frameworks/skeleton/css/normalize.css">
     <link rel="stylesheet" href="frameworks/skeleton/css/skeleton.css"> -->
     <script defer src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="stylesheet.css" />
+
+    <!-- Hier wird eine Font-Familie von Googlefonts importiert und in CSS verwendet -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+
     <title>Document</title>
 
 </head>
 
 <body>
 
-        <nav class="site-nav text-uppercase navbar navbar-expand-md navbar-dark w-100 bg-primary">
-                
-            <div class="container-fluid">
-                <a class="navbar-brand font-weight-normal" href="#prelude">
-                    <i class="fas fa-cube mr-2"></i> prelude</a>
-                
-                <button 
-                    type="button" 
-                    class="navbar-toggler" 
-                    data-toggle="collapse" 
-                    data-target="#myTogglerNav" 
-                    aria-controls="#myTogglerNav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- aria-label is for screen readers  -->
+    <!-- Hier fängt die Klasse mit der Bennenung 'site-nav', für eine bessere Übersichtlichkeit -->
+    <!-- Weitere Bootstrap-Klassenbennenungen werden hier verwendet, um die Eigneschaften dieser Klasse umzustellen. Es funktioniert wie eine CSS Zuweisung. -->
+    <!-- Mit 'navbar-expand-md' bestimmt man, dass die Navbar ab einem mitteleren Breakpoint expandieren muss -->
+    <nav class="site-nav text-uppercase navbar navbar-expand-md navbar-dark w-100" style="background-color: #322eff;">
 
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <section class="collapse navbar-collapse" id="myTogglerNav">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link" href="#intro">intro</a>
-                        <a class="nav-item nav-link" href="#page-one">stage-one</a>
-                        <a class="nav-item nav-link" href="#page-two">stage-two</a>
-                        <a class="nav-item nav-link" href="#page-final">stage-final</a>
-                    </div>
-                </section>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#prelude">NoCents</a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
+                aria-controls="#myTogglerNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- aria-label ist für Screenreaders  -->
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="myTogglerNav">
+                <!-- 'ml-auto' begrenzt die Bewegung der Links zu einer Seite, in diesem Fall Links. -->
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="#intro">intro-0</a>
+                    <a class="nav-item nav-link" href="#page-one">stage-one</a>
+                    <a class="nav-item nav-link" href="#page-two">stage-two</a>
+                    <a class="nav-item nav-link" href="#page-final">stage-final</a>
+                </div>
+            </section>
+        </div>
+    </nav>
+
+
+    <header id="prelude" class="landing-page">
+        <section class="welcome-content d-flex flex-column min-vh-100">
+            <div class="header-content d-flex flex-column flex-fill">
+                <div
+                    class="d-flex flex-column container justify-content-center align-items-center flex-fill text-center">
+                    <h3 class="header-title display-2 font-weight-lighter"> This website is stupid, <br>
+                        scroll down to navigate it </h3>
+                    <p class="header-subtitle lead font-weight-lighter">Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Nesciunt asperiores, repudiandae quisquam
+                        fugiat
+                        debitis
+                        sed obcaecati nulla aliquam,
+                        incidunt voluptatibus beatae omnis aperiam corrupti recusandae quia iste nisi. Explicabo, nam.
+                    </p>
+                </div>
             </div>
-        </nav>
-
-
-    <section class="upper-stage" id="prelude">
-        <p> this website is stupid <br>
-            scroll down to get back to it </p>
-    </section>
-
-    <section class="landing-page" id="intro">
-        <p> On 25. Nov. 2020 </p>
-    </section>
-
-    <section class="stage-one" id="page-one">
-        <p> stage : 1 <br>
-            ground : common <br>
-            forgetting w you </p>
-    </section>
-
-    <section class="stage-two" id="page-two">
-        <p> stage : 2 <br>
-            ground : grounded <br>
-            forgetting abt you </p>
-    </section>
-
-    <section class="stage-final" id="page-final">
-        <p> stage : final <br>
-            ground : zero <br>
-            wondering : why <br>
-            reason : reasonless </p>
-    </section>
-
-    <section class="left-stage-one">
-        <p> past is concealed</p>
-    </section>
-
-    <section class="left-stage-two">
-        <p> gradually blurred content !</p>
-    </section>
-
-    <div class="wrapper-two">
-        <section class="right-stage-one">
-            <p> help me color the zebra </p>
         </section>
+    </header>
 
-        <section class="right-stage-two">
-            <p> don't use all of your colors, but if you do, call me </p>
+    <article id="page-one" class="page-section">
+        <section class="welcome-content d-flex flex-column min-vh-100">
+            <div class="header-content d-flex flex-column flex-fill">
+                <div
+                    class="d-flex flex-column container justify-content-center align-items-center flex-fill text-center">
+                    <h3 class="header-title display-2 font-weight-lighter"> Stage 1, <br>
+                        forgetting with you </h3>
+                    <p class="header-subtitle lead font-weight-lighter">Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Nesciunt asperiores, repudiandae quisquam
+                        fugiat
+                        debitis
+                        sed obcaecati nulla aliquam,
+                        incidunt voluptatibus beatae omnis aperiam corrupti recusandae quia iste nisi. Explicabo, nam.
+                    </p>
+                </div>
+            </div>
         </section>
+    </article>
+
+    <article id="page-two" class="page-section">
+        <section class="welcome-content d-flex flex-column min-vh-100">
+            <div class="header-content d-flex flex-column flex-fill">
+                <div
+                    class="d-flex flex-column container justify-content-center align-items-center flex-fill text-center">
+                    <h3 class="header-title display-2 font-weight-lighter"> Stage 2, <br>
+                        forgetting about you </h3>
+                    <p class="header-subtitle lead font-weight-lighter">Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Nesciunt asperiores, repudiandae quisquam
+                        fugiat
+                        debitis
+                        sed obcaecati nulla aliquam,
+                        incidunt voluptatibus beatae omnis aperiam corrupti recusandae quia iste nisi. Explicabo, nam.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <article id="page-final" class="page-section">
+        <section class="welcome-content d-flex flex-column min-vh-100">
+            <div class="header-content d-flex flex-column flex-fill">
+                <div
+                    class="d-flex flex-column container justify-content-center align-items-center flex-fill text-center">
+                    <h3 class="header-title display-2 font-weight-lighter"> Stage: final, <br>
+                        wondering why </h3>
+                    <p class="header-subtitle lead font-weight-lighter">Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Nesciunt asperiores, repudiandae quisquam
+                        fugiat
+                        debitis
+                        sed obcaecati nulla aliquam,
+                        incidunt voluptatibus beatae omnis aperiam corrupti recusandae quia iste nisi. Explicabo, nam.
+                    </p>
+                    <div class="row">
+                        <div class="six columns">
+                            <label for="skeName">Your Name</label>
+                            <input class="u-full-width" type="text" id="skeName " name="ske_name">
+                        </div>
+                        <div class="six columns">
+                            <label for="skeIndustry">Your Industry</label>
+                            <select class="u-full-width" id="skeIndustry " name="skeIndustry">
+                                <option value="hospitality">Hospitality</option>
+                                <option value="it">Information Technology</option>
+                                <option value="trade">Trade</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <label for="skeMessage">Message</label>
+                            <textarea class="u-full-width" name="ske_message" id="skeMessage"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+<footer>
+    <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+<p>Copyright</p>
+        </div>
     </div>
+</footer>
 
-    <section class="ask-me-down">
-        <p> ask me why </p>
-    </section>
 
+
+    <!-- Bootstrap braucht manchmanl JQuery, deswegen wird JQuery hier auch geladen -->
     <!-- bootstrap uses popperjs and jquery that's why they're being loaded before bootstrap // succession matters here -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <!-- <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script> -->
