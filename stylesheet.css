@@ -1,53 +1,6 @@
-/* body {
-    font-size: 100px;
-} */
-
-/* section {
-    width: 100%;
-    height: 100vh;
-}
-
-.landing-page {
-    font-size: 100px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
-.stage-one {
-    font-size: 100px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
-.stage-two {
-    font-size: 100px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
-.stage-final {
-    font-size: 100px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
-/* .wrapper-two {
-    display: flex;
-    flex-direction: row;
-    width: 400vw;
-}
-
-.right-stage-one, .right-stage-two {
-    font-size: 100px;
-} */
-
-
 /* COLOR USED: #322eff */
-/* >>>>GENERAL STYLE<<<< */
+
+/* ––––––––––––––––––––– General Style ––––––––––––––––––––– */
 html{
     scroll-behavior: smooth;
 }
@@ -56,7 +9,17 @@ body{
     font-family: 'Kufam', cursive;
 }
 
-/* >>>>NAVIGATION<<<< */
+.link-to-comments{
+    color: white;
+    text-decoration: none;
+}
+
+.link-to-comments:hover{
+    color: white;
+    text-decoration: none;
+}
+
+/* ––––––––––––––––––––– Navigation ––––––––––––––––––––– */
 .nav-item{
     font-family: 'Kufam', cursive;
 }
@@ -71,6 +34,7 @@ body{
     position: relative;
     padding-bottom: 2px;
 }
+
 /* Die Position ist Absolut bezogen auf das Eltern-Element was Relativ positioniert ist */
 .site-nav .nav-link::before {
     content: '';
@@ -92,20 +56,37 @@ body{
     opacity: 1;
 }
 
-/* >>>>MIDDLE SECTION<<<< */
+/* —————————––––––––––– CONTENT ––––––––––––––––––––– */
 
-.landing-page{
+.landing-page .page-section{
     position: relative;
     height: 100vh;
     /* background: linear-gradient(180deg, #322eff, rgb(0, 207, 111)); */
 }
 
-.header-title{
-    animation: slideUp 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+.comment-section{
+    padding: 10vh;
+    height: 100vh;
 }
 
-.header-subtitle {
-    animation: slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+/* ––––––––––––––––––––– Prelude ––––––––––––––––––––– */
+
+#prelude {
+    background-color: #322eff;
+}
+
+.header-title-prelude{
+    opacity: 0;
+    transform: translateY(300px) scale(1.2);
+    animation: clear 0.9s forwards;
+    /* animation: slideUp 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; */
+}
+
+.header-subtitle-prelude{
+    opacity: 0;
+    transform: translateY(300px) scale(1.2);
+    animation: clear 0.9s forwards;
+    /* animation: slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; */
 }
 
 
@@ -121,31 +102,80 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    /* opacity: 1; */
-}
+ }
 
-
-
-#prelude {
-    background-color: #322eff;
-}
+/* ––––––––––––––––––––– Page one ––––––––––––––––––––– */
 
 #page-one {
     background-color: #322eff;
 }
 
+.header-title-one{
+    opacity: 0;
+    transform: translateY(300px) scale(1.2);
+    animation: clear 0.9s forwards;
+    /* animation: slideUp 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; */
+}
+
+.header-subtitle-one{
+    opacity: 0;
+    transform: translateY(300px) scale(1.2);
+    animation: clear 0.9s forwards;
+    /* animation: slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; */
+}
+
+/* ––––––––––––––––––––– Page two ––––––––––––––––––––– */
+
 #page-two {
     background-color: #322eff;
 }
 
+.header-title-two{
+    opacity: 0;
+    transform: translateY(300px) scale(1.2);
+    animation: clear 0.9s forwards;
+    /* animation: slideUp 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; */
+}
+
+.header-subtitle-two{
+    opacity: 0;
+    transform: translateY(300px) scale(1.2);
+    animation: clear 0.9s forwards;
+    /* animation: slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; */
+}
+
+/* ––––––––––––––––––––– Page final ––––––––––––––––––––– */
+
 #page-final {
     background-color: #322eff;
+}
+
+.header-title-final{
+    opacity: 0;
+    transform: translateY(300px) scale(1.2);
+    animation: clear 0.9s forwards;
+    /* animation: slideUp 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; */
+}
+
+.header-subtitle-final{
+    opacity: 0;
+    transform: translateY(300px) scale(1.2);
+    animation: clear 0.9s forwards;
+    /* animation: slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; */
 }
 
 .welcome-content {
     color: rgb(255, 255, 255);
     text-align: center;
     z-index: 6;
+}
+
+/* ––––––––––––––––––––– Animation ––––––––––––––––––––– */
+
+.appear {
+    animation: clear 0.9s forwards;
+    opacity: 0;
+    transform: translateY(300px) scale(1.2);
 }
 
 @keyframes slideUp {
@@ -167,37 +197,10 @@ body{
     }
 }
 
-/* >>>>CHEVRON section<<<< */
+/* ––––––––––––––––––––– CHEVRON section –––––––––––––––––––––*/
 
 .header-cue {
     z-index: 11;
 }
 
 
-
-/* .header-subtitle::before {  
-    transform: scaleX(0);
-    transform-origin: bottom right;
-  }
-  
-  .header-subtitle:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  
-  .header-subtitle::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    inset: 0 0 0 0;
-    background: rgb(0, 214, 11);
-    z-index: -1;
-    transition: transform .3s ease;
-  }
-  
-  .header-subtitle {
-    position: relative;
-    font-size: 5rem;
-    text-align: center;
-  } */

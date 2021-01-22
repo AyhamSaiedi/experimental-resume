@@ -5,7 +5,7 @@ const app = express();
 const fs = require('fs')
 
 
-const direction = "C:/Users/denis/programming/shitMitAyham/"
+const direction = "/Users/ayhamsaiedi/Desktop/info-projekt/experimental-resume/"
 
 app.use('/', express.static(`${direction}src`))
 app.use(bodyParser.json());
